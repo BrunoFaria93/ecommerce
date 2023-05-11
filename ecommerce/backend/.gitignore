@@ -1,4 +1,5 @@
-.git
+/config/.env
+
 # dependencies
 /node_modules
 /.pnp
