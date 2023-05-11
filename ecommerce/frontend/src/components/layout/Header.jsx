@@ -62,8 +62,8 @@ const Header = ({ activeHeading }) => {
 
   return (
     <>
-      <div className={`${styles.section}`}>
-        <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
+      <div className={`bg-[#181818] w-full p-5`}>
+        <div className="hidden 800px:h-[50px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
               <img
@@ -127,9 +127,12 @@ const Header = ({ activeHeading }) => {
         </div>
       </div>
       <div
+    //   sticky top-0 z-40 w-full backdrop-blur p-4 lg:px-[103px] flex justify-between 
+    //   items-center transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10
+    //    border-slate-50/[0.06] bg-slate-950/30
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 800px:flex items-center justify-between w-full bg-[#3321c8] h-[70px]`}
+        } transition hidden 800px:flex items-center justify-between w-full backdrop-blur bg-slate-950/60 h-[70px]`}
       >
         <div
           className={`${styles.section} relative ${styles.normalFlex} justify-between`}
